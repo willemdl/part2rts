@@ -6,7 +6,9 @@ static void ExecuteTask (Taskp t)
   /* ----------------------- INSERT CODE HERE ----------------------- */
   DEBUGPORT = 0x1;
   t->Invoked++;
+  _EINT();
   t->Taskf(t->ExecutionTime); // execute task
+  _DINT();
   DEBUGPORT = 0x9;
   /* ---------------------------------------------------------------- */
 
