@@ -1,0 +1,7 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "led.h": "c",
+        "scheduler.h": "c"
+    }
+}
